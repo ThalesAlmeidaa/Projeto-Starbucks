@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px; 
+}
+
+.logo {
+    width: 80px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+button {
+    background-color: #017143;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.4s; 
+}
+
+button:hover {
+    background: #018950; 
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 230px;
+    transition: 0.6s ease-in-out;
+}
+
+.caixa-imagem:hover {
+    transform: translateY(30px) translateX(20px) scale(1.2);
+}
+
+.copo {
+    width: 340px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.botao-menu {
+    width: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-menu:hover {
+    transform: translateY(-30px);
+}
+
+.circulo {
+    background: #017143;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+@media (max-width: 1390px) {
+
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1123px) {
+
+    .circulo {
+        clip-path: circle(500px at right 830px);
+    }
+
+    .starbucks {
+        width: 300px;
+        position: absolute;
+        right: 20px;
+    }
+
+    .menu {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .menu {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .circulo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
