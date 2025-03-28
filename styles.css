@@ -90,7 +90,7 @@ button:hover {
 }
 
 .botao-menu:hover {
-    transform: translateY(-30px);
+    transform: translateY(-30px) scale(1.5);
 }
 
 .circulo {
